@@ -1,0 +1,86 @@
+trabajo practico clase 6: calculadora
+alumno: Santillan Rafael Gabriel
+dias y horario: martes y jueves de 19hs a 21hs
+
+ejercicio resuelto_ ( calculadora )
+
+import java.util.Scanner;
+
+public class calculadora {
+
+	public static void main(String[] args) {
+      
+		
+	    Scanner intro = new Scanner(System.in);
+	    
+	    int n1, n2, resultado, opcion;
+	    boolean p= true;
+	    
+	     while(p) {
+	    		 
+	    	 System.out.println("menu de la calculadora");
+	    	 System.out.println("elija una que operacion quiere hacer");
+	    	 System.out.println("1 - sumar");
+	    	 System.out.println("2 - restar");
+	    	 System.out.println("3 - multiplicar");
+	    	 System.out.println("4 - dividir");
+	    	 System.out.println("5 - salir");	
+	    	 opcion = intro.nextInt();
+	    	 
+	    	 
+	         if (opcion == 5) {
+	    		   System.out.println("salio");
+	    	        } else{
+	    		       
+	    	      switch (opcion){
+	    	      case 1:
+	    			   System.out.println("ingrese el primer numero");
+	    			   n1 = intro.nextInt();
+	    			   System.out.println("ingrese el segundo numero");
+	    			   n2 = intro.nextInt();
+	    			   resultado= n1+n2;
+	    			   System.out.println("el resultado de la suma es: "+ resultado);
+	    	           break;
+	    	      case 2:
+	    		 
+	    			   System.out.println("ingrese el primer numero");
+	    			   n1 = intro.nextInt();
+	    			   System.out.println("ingrese el segundo numero");
+	    			   n2 = intro.nextInt();
+	    			   resultado= n1-n2;
+	    			   System.out.println("el resultado de la resta es: "+ resultado);
+	    			   break;
+	    			   
+	    	      case 3: 
+	    			   System.out.println("ingrese el primer numero");
+	    			   n1 = intro.nextInt();
+	    			   System.out.println("ingrese el segundo numero");
+	    			   n2 = intro.nextInt();
+	    			   resultado= n1*n2;
+	    			   System.out.println("el resultado de la multiplicacion es: "+ resultado);
+	    	           break;
+	    	        
+	    	      case 4:
+	    			   System.out.println("ingrese el primer numero");
+	    			   n1 = intro.nextInt();
+	    			   System.out.println("ingrese el segundo numero");
+	    			   n2 = intro.nextInt();
+	    			   resultado= n1/n2;
+	    			   System.out.println("el resultado de la divicion es: "+ resultado);
+	    			   break;
+	    			 
+	    	        default:
+	    				   System.out.println("opcion invalida");
+	    				   
+	    			intro.close();
+	    		      }
+ 
+	    	        }
+	    	   
+    	 
+	    }
+	    
+
+	}
+
+}
