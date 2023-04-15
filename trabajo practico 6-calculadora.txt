@@ -1,6 +1,7 @@
 trabajo practico clase 6: calculadora
 alumno: Santillan Rafael Gabriel
 dias y horario: martes y jueves de 19hs a 21hs
+repositorio : https://github.com/santillan-rafael-gabriel/tpclase6-calculadora.git
 
 ejercicio resuelto_ ( calculadora )
 
